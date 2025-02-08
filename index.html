@@ -14,50 +14,175 @@
     <!-- Add your external script links here, if any -->
   </head>
 
-  <body
-    class="bg-gray-900 flex flex-col items-center justify-center min-h-screen"
-  >
+  <body class="bg-gray-900">
     <div
       class="bg-white text-gray-800 p-8 space-y-4 shadow rounded-xl max-w-md md:max-w-lg"
     >
-      <!-- Logo and Title -->
-      <img
-        src="https://mqzzwgavxmdmqvivwgez.supabase.co/storage/v1/object/public/previews/logo-challenge-template.svg"
-        alt="BigDevSoon Logo"
-        class="w-150 mx-auto"
-      />
-      <!-- Introduction and Instructions -->
-      <p class="text">
-        Utilize the tabs in <strong>BigDevSoon's challenge page</strong> to
-        access everything you need. The <strong>Instructions</strong> tab
-        contains specific details for implementing this task.
-      </p>
+      <header>
+        <h1>Boards</h1>
+      </header>
 
-      <!-- Encouragement for Creativity and Interaction -->
-      <ul class="list-disc list-inside space-y-2">
-        <li>
-          Be <strong>creative!</strong> Don't hesitate to bring your unique
-          ideas to life.
-        </li>
-        <li>
-          Interact with <strong>ChatGPT</strong> for coding assistance and
-          hints.
-        </li>
-        <li>
-          Connect with other developers who are tackling the same challenge in
-          the <strong>People</strong> tab.
-        </li>
-        <li>
-          Need a nudge in the right direction? Check out the
-          <strong>Help</strong> tab.
-        </li>
-      </ul>
+      <main class="grid-container">
+        <!-- todo section -->
+        <section class="todo">
+          <h2>To do <span>+</span></h2>
+          <div class="long-card">
+            <div class="card-info">
+              <span>High</span>
+              <span>2/1k/24</span>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1632516643720-e7f5d7d6ecc9?q=80&w=2622&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="blue and pink background with a circular object in the middle"
+            />
+            <h3>Update Website Homepage</h3>
+            <p>
+              Revise the content and layout of the homepage to highlight new
+              features and improve user engagement.
+            </p>
+            <ul class="profile-pics">
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- in progress section -->
+        <section class="in-progress">
+          <h2>In progress <span>+</span></h2>
+          <div class="short-card">
+            <div class="card-info">
+              <span>Low</span>
+              <span>2/13/24</span>
+            </div>
+            <h3>Bug Fix - User Registration</h3>
+            <p>
+              Investigate and resolve the reported bug in the user registration
+              process where some users are unable to sign up.
+            </p>
+            <ul class="profile-pics">
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+            </ul>
+          </div>
+          <!-- long card -->
+          <div class="long-card">
+            <div class="card-info">
+              <span>Medium</span>
+              <span>2/08/24</span>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="blue and pink abstract painting"
+            />
+            <h3>Social Media Campaign</h3>
+            <p>
+              Plan and execute a social media campaign for the upcoming product
+              launch in February, including creating posts and scheduling
+              updates.
+            </p>
+            <ul class="profile-pics">
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- under review section -->
+        <section class="under-review">
+          <h2>Under Review <span>+</span></h2>
 
-      <p class="text-sm border-t pt-6">
-        <strong>Tip</strong>: This example uses TailwindCSS for styling. Feel
-        free to integrate any other libraries using their respective CDNs to
-        enhance your project.
-      </p>
+          <div class="short-card">
+            <div class="card-info">
+              <span>High</span>
+              <span>2/11/24</span>
+            </div>
+            <h3>Mobile App Feature - Push Notifications</h3>
+            <p>
+              Implement push notification feature for the mobile app to enhance
+              user engagement. Ensure compatibility with both iOS and Android
+              platforms.
+            </p>
+            <ul class="profile-pics">
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- done section -->
+        <section class="done">
+          <h2>Done <span>+</span></h2>
+
+          <div class="short-card">
+            <div class="card-info">
+              <span>Low</span>
+              <span>2/11/24</span>
+            </div>
+            <h3>Content Creation - Blog Post</h3>
+            <p>
+              Write and publish a blog post about industry trends and their
+              impact on our products/services. Include relevant visuals and SEO
+              optimization.
+            </p>
+            <ul class="profile-pics">
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+            </ul>
+          </div>
+
+          <!-- long card -->
+
+          <div class="long-card">
+            <div class="card-info">
+              <span>Medium</span>
+              <span>2/07/24</span>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1521133573892-e44906baee46?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="purple crystal quartz stone"
+            />
+            <h3>IT Security Audit</h3>
+            <p>
+              Write and publish a blog post about industry trends and their
+              impact on our products/services. Include relevant visuals and SEO
+              optimization.
+            </p>
+            <ul class="profile-pics">
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+              <li class="rounded-img">
+                <img src="" alt="" />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>
