@@ -1,12 +1,36 @@
 /* Add your CSS here. Utilize Tailwind classes or write custom styles to bring your unique design to life. */
 
-.grid-container {
-  display: grid;
-  border: 1px solid red;
-  grid-template-columns: repeat(4, 1fr);
-}
-
 .section-header {
   font-size: 1.375rem;
   font-weight: 600;
+}
+
+.long-card,
+.short-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card-img {
+  border-radius: 16px;
+  margin: 0 auto;
+  height: 128px;
+  width: clamp(180px, 20vw, 272px);
+  background-size: cover;
+  background-position: 50%;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
 }
