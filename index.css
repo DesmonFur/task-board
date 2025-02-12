@@ -32,6 +32,7 @@ section {
 .card-info {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 h3 {
