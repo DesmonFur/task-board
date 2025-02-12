@@ -54,6 +54,7 @@ p {
   display: flex;
   position: relative;
   height: 50px;
+  margin-top: 1rem;
 }
 
 .profile-pics li:nth-child(2) img {
