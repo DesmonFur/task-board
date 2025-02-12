@@ -12,6 +12,8 @@
   flex-direction: column;
   padding: 1.2rem;
   max-width: 350px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
 }
 
 section {
