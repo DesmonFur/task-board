@@ -48,6 +48,34 @@ p {
   line-height: 1.625rem;
 }
 
+.profile-pics {
+  display: flex;
+  position: relative;
+  height: 50px;
+}
+
+.profile-pics li:nth-child(2) img {
+  position: absolute;
+  left: 25px;
+  z-index: 1000;
+}
+.profile-pics svg {
+  position: absolute;
+  left: 60;
+  top: 5;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.rounded-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid white;
+  position: absolute;
+}
+
 @media (min-width: 768px) {
   .grid-container {
     display: grid;
