@@ -10,6 +10,7 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  padding: 1.2rem;
 }
 
 section {
@@ -25,6 +26,11 @@ section {
   width: clamp(180px, 20vw, 272px);
   background-size: cover;
   background-position: 50%;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
