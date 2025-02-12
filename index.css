@@ -17,7 +17,13 @@ body {
   max-width: 350px;
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
-  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .long-card,
+  .short-card {
+    margin: 0 auto;
+  }
 }
 
 section {
@@ -97,5 +103,9 @@ p {
 
   .section-header {
     text-align: start;
+  }
+
+  .long-card,
+  .short-card {
   }
 }
